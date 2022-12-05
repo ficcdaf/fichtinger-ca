@@ -1,0 +1,170 @@
+figure {
+	margin: auto;
+}
+
+img {
+	max-width: 50%;
+}
+
+.navbar-fixed {
+    top: 0;
+    /* z-index: 100; */
+  	position: fixed;
+    width: 50%;
+	height:15vh;
+	z-index: 200;
+}
+
+.navbar-placeholder {
+	z-index: -1000;
+	position: scrolling;
+}
+.hidden {
+	display: none;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.flex-center-vertically {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+
+/* Parallax */
+
+
+.header-box {
+	position: relative;
+	height: 85vh;
+	width: 100%;
+/*	background-image: url("../images/anarchy_in_russia_04_by_hardcorehamster-d31f2sb-mitchell.jpg");*/
+/*	background-color: #000000;*/
+/*	background-image: url("../images/Mega-City-1920x1080.jpg");*/
+/*	background-image: url("../images/protesters-gather-athens-yesterday-angelos-tzortzinis-afp-getty.jpg");*/
+	background-image: url("../images/doom.png");
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	box-shadow: inset 0 0 0  100vh rgba(0, 0, 0, 0.67);
+	z-index: -1;
+
+	
+	/* filter: blur(1.5px); */
+
+}
+
+.nav {
+	transition: all ease 0.5s;
+	background-color: #282c34;
+	z-index: 1000;
+	/* height:25vh; */
+
+}
+
+.navbar {
+	height:15vh;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: all ease 1s;
+	height: 15vh;
+}
+
+.main-title {
+	color: #ffffff;
+	position: absolute;
+    top: 50%;
+    font-size: 9vh;
+    margin-bottom: 0;
+    margin-top: -4.5vh;
+	
+	
+}
+
+.purple {
+	color: #c678dd;
+}
+
+.purple2 {
+	color: #a9a1e1;
+}
+
+.green {
+	color: #98be65;
+}
+
+@media (max-width: 700px){
+	.mobile-nav-menu{
+		display: block;
+	}
+}
+
+/* #nav_bar {
+	position: fixed;
+	width: 50%;
+} */
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.nav {
+    display: inline;
+}
+
+button.link { 
+	background:none;
+	border:none; 
+	font-size: 2.25vh;
+	padding-top: 0;
+	top: 50%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: -1.125vh;
+/*	padding: 0;*/
+}
+
+#outer{
+	height:100%;
+	width:100%;
+	display:table;
+	vertical-align:middle;
+}
+
+#container {
+/*	text-align: center;*/
+	position:relative;
+	vertical-align:middle;
+	display:table-cell;
+} 
+
+#inner {
+/*	text-align: center;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.img-container {
+	text-align: center;
+}
